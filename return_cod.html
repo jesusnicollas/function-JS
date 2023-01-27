@@ -1,0 +1,26 @@
+<meta charset ="UTF-8">
+<html>
+    <body>
+        <h1> primeiro site utilizando JavaScript </h1>
+        <br>
+        <h3> texto continua com letra menor <br> </h3>
+    <script>
+        function validaPin(letra, num1, num2) {
+
+            if (letra != "A" && num1 != 20 && num2 != 30) {
+                document.write("Pin invalido");
+            }
+            else {
+                return document.write("GH1022")
+            }
+        }
+        
+        var letra = prompt("Digite a letra de acesso");
+        var numeroInserido1 = prompt("Digite o código 1");
+        var numeroInserido2 = prompt("Digite o código 2");
+
+        var teste = validaPin(letra, numeroInserido1,numeroInserido2);
+
+    </script>
+</body>
+</html>
