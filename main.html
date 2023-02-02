@@ -8,17 +8,19 @@
         <input type="button" value="Confirmar" id="botao">
 
         <script>
+            exibeMensagem("Italo é gordo e feio" + pulaLinha())
+
             function pulaLinha() {
                 document.write("<br>");
-            };
+            }
             function exibeMensagem(texto) {
                 document.write(texto);
                 pulaLinha();
-            };
+            }
             function calculoImc(altura, peso) {
                 var imc = peso / (altura*altura) ;
                 return imc;
-            } ;
+            }
             
             function mediaImc(imc) {
                 if (imc < 18.5 ){
@@ -39,22 +41,24 @@
                 else exibeMensagem("Há algo de estranho, contate o nosso suporte.")
             }
             let idade =  25;
-            exibeMensagem("A idade do Nicollas é : " + idade) 
-            var ImcNicollas = calculoImc(1.71, 70)
-            exibeMensagem("IMC de Nicollas é: " + ImcNicollas)
+            exibeMensagem("A idade do Nicollas é : " + idade);
+            var ImcNicollas = calculoImc(1.71, 70);
+            exibeMensagem("IMC de Nicollas é: " + ImcNicollas);
             mediaImc(ImcNicollas)
 
-            var ImcBreno = calculoImc(1.50, 98)
-            exibeMensagem("IMC do Breno é: " + ImcBreno)
-            mediaImc(ImcBreno);
+            var ImcBreno = calculoImc(1.50, 98);
+            exibeMensagem("IMC do Breno é: " + ImcBreno);
+            mediaImc(ImcBreno)
 
 
-            exibeMensagem("Ola")
-            alert("escreva algo no código, boa")
-            alert("invejoso sai do meu pé")
+            exibeMensagem("Ola");
+            alert("escreva algo no código, boa");
+            alert("invejoso sai do meu pé");
         
 
-            document.getElementById("a").onclick = function(){alert('clicou')}
+            document.getElementById("a").onclick = function(){
+                alert('clicou')
+            }
             document.getElementById("botao").onclick = function(){
                 //alert('clicou');
                 
@@ -66,7 +70,7 @@
                     document.getElementById("a").setAttribute("hidden","true")
 
                 }
-                }
+            }
         </script>
     </body>
 </html>
