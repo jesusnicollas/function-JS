@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <input type="text" id="inputConfirma">
+        <button id="botaoConfirma">Confirmar</button>
+        <p>    
+        <script>
+
+            function pulaLinha() {
+                document.write("<br>")
+            };
+            function exibeMensagem(texto){
+               document.write(texto);
+               pulaLinha();
+            };
+
+            var input = document.querySelector("input");
+            
+            var confirma = document.querySelector("button");
+            confirma.onclick = validaChute;
+
+            function validaChute(){
+                // Foi colocado Random dentro da função, assim dificultará exibir resultado pelo console.
+                var random = Math.round(Math.random() * 10);
+                if (input.value != random) {
+                    exibeMensagem("Você errou, o número gerado é: " + random);
+                    return true
+                    ;
+                }
+                exibeMensagem("Você acertou! O número gerado foi: " + random)
+            }
+            
+        </script>
+    </body>
+</html>
